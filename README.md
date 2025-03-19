@@ -34,3 +34,16 @@ Stepping into a new level of college life.
 * EST2505        Analogue Electronics
 * MATH1206   Mathematical and Physics Methods
 * MATH1207   Probability Statistics
+
+
+
+### Sophomore 2024 Spring
+
+Specialist courses are on the way.
+
+* BME2202     Fundamentals of Biomedical Statistics
+* BME2301     Signal and Systems I
+* BME2302     Medical Physics
+* CS2501        Discrete Mathematics
+* PHY1253      College Physics III
+
