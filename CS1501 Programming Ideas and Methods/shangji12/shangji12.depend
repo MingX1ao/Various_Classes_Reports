@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1671791341 source:e:\codeblocks\project\shangji12\main.cpp
+	<iostream>
+	<cstring>
+

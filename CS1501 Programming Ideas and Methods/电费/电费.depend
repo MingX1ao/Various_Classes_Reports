@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1663600283 source:e:\codeblocks\工程\电费\main.cpp
+	<iostream>
+	<iomanip>
+

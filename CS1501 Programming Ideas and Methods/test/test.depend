@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1673174953 source:e:\codeblocks\project\test\main.cpp
+	<iostream>
+	<cmath>
+	<string.h>
+	<iostream>
+	<cmath>
+	<iomanip>
+
+1680103716 source:e:\codeblocks\myproject\freshmen up\test\main.cpp
+	<iostream>
+	<cmath>
+	<string.h>
+	<iostream>
+	<cmath>
+	<iomanip>
+
+1693714319 source:d:\mysoftwares\stem\codeblocks\myproject\freshmen up\test\main.cpp
+	<iostream>
+	<cmath>
+	<string.h>
+	<vector>
+	<cstring>
+	<cstdlib>
+	<ctime>
+	<iostream>
+	<cmath>
+	<iomanip>
+
