@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669429092 source:e:\codeblocks\project\homework8\main.cpp
+	<iostream>
+	<cstring>
+	<typeinfo>
+

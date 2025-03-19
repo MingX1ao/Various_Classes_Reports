@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1668690333 source:e:\codeblocks\project\oj8\main.cpp
-	<iostream>
-	<stdlib.h>
-
-1668690362 source:e:\codeblocks\myproject\freshmen up\oj8\main.cpp
-	<iostream>
-	<stdlib.h>
-

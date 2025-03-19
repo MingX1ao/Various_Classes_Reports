@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1676784842 source:e:\codeblocks\project\classic_problem\main.cpp
-	<iostream>
-	<cmath>
-	<fstream>
-

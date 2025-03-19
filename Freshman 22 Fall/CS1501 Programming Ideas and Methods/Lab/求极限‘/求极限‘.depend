@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1663842065 source:e:\codeblocks\工程\求极限‘\main.cpp
+	<iostream>
+	<cmath>
+
+1665805216 source:e:\codeblocks\project\求极限‘\main.cpp
+	<iostream>
+	<cmath>
+
