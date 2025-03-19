@@ -1,5 +1,5 @@
-# Various_Lab_Report
-This is SJTU's classes LAB REPORTs.  
+# Various_Class_Report
+This is SJTU's classes LAB REPORTs and HOMEWORKs.  
 I defend your right to do something more meaningful, so feel free to use the contents of this repository.  
 
 # Existing classes
