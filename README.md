@@ -4,5 +4,5 @@ I defend your right to do something more meaningful, so feel free to use the con
 
 # Existing classes
 ## Freshman
-During this period, I haven't form a standard, so the contents may seems immatured.Please forgive me!
+During this period, I haven't form a standard, so the contents may seems immatured. Please forgive me!
 * CS1501 Programming Ideas and Methods(C++)
