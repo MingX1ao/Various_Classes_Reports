@@ -41,9 +41,26 @@ Stepping into a new level of college life.
 
 Specialist courses are on the way.
 
+* BME1203     Introduction to Biology
+
 * BME2202     Fundamentals of Biomedical Statistics
 * BME2301     Signal and Systems I
 * BME2302     Medical Physics
 * CS2501        Discrete Mathematics
 * PHY1253      College Physics III
 
+
+
+### Junior 2024 Fall
+
+It's halfway to not being a rookie now. Lot‘s of classes and workload.
+
+* BME3301    Signal and Systems II
+* BME3303    Biomedical Sensors
+* BME3304    Biomedical Image Processing
+* BME3305	Microcomputer Principles
+* BME3306    Microcomputer Principle Experiment
+* BME3307    Automatic Control Principles 
+* BME3402    Anatomy and Physiology I
+* CS2305       Computer System Architecture
+* CS3322       Database Principles

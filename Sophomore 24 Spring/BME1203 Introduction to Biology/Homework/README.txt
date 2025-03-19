@@ -1,0 +1,1 @@
+Yes, this course has no homeworks.

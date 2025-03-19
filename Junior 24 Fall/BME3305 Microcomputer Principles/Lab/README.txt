@@ -1,0 +1,1 @@
+This course's lab is an independent course, refering to BME3306 Microcomputer Principle Experiment

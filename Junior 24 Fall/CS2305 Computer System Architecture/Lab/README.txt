@@ -1,0 +1,1 @@
+As a minor course, it has no lab.
