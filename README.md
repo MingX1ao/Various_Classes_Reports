@@ -8,7 +8,7 @@ I defend your right to do something more meaningful, so feel free to use the con
 ## Existing classes
 ### Freshman 2022 Fall
 During this period, I haven't form a standard, so the contents may seems immatured. Please forgive me!
-* CS1501      Programming Ideas and Methods(C++)
+* CS1501           Programming Ideas and Methods(C++)
 * MATH1201    Advanced Mathematics I
 * MATH1205    Linear Algebra
 
@@ -18,5 +18,19 @@ During this period, I haven't form a standard, so the contents may seems immatur
 
 A little matured, but still a freshman.
 
+* EST2501        Digital Fundamentals
+
 * MATH1202    Advanced Mathematics II
-* 
+* PHY1251       College Physics I
+
+
+
+### Sophomore 2023 Fall
+
+Stepping into a new level of college life.
+
+* BME2303      Digital Electronics Experiments
+* BME2305      Analogue Electronics Experiments
+* EST2505        Analogue Electronics
+* MATH1206   Mathematical and Physics Methods
+* MATH1207   Probability Statistics

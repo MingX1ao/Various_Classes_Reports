@@ -1,0 +1,1 @@
+This class has no major. Have a nice day!

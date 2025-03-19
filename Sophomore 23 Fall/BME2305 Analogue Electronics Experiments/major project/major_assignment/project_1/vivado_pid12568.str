@@ -1,0 +1,574 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+Process ID: 12568
+
+Current time: 	12/29/23 4:42:38 PM
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	bme317
+User directory: E:/major_assignment/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+Vivado preferences path: C:/Users/bme317/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/bme317/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 456 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/major_assignment/project_1/project_1.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 41 MB (+40887kb) [00:00:02]
+// [Engine Memory]: 388 MB (+255252kb) [00:00:02]
+// [GUI Memory]: 52 MB (+11279kb) [00:00:03]
+// [Engine Memory]: 428 MB (+42102kb) [00:00:03]
+// [Engine Memory]: 434 MB (+5951kb) [00:00:03]
+// [Engine Memory]: 452 MB (+19005kb) [00:00:04]
+// Tcl Message: open_project E:/major_assignment/project_1/project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/bme317/Desktop/major_assignment/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 456 MB (+4837kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 53 MB (+627kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 53 MB (+717kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 54 MB (+717kb) [00:00:04]
+// [GUI Memory]: 55 MB (+687kb) [00:00:04]
+// [GUI Memory]: 55 MB (+717kb) [00:00:04]
+// [GUI Memory]: 56 MB (+687kb) [00:00:04]
+// [GUI Memory]: 56 MB (+184kb) [00:00:04]
+// [GUI Memory]: 57 MB (+754kb) [00:00:04]
+// [GUI Memory]: 58 MB (+687kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+717kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+687kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+717kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+717kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+687kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 62 MB (+717kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 63 MB (+1076kb) [00:00:04]
+// [GUI Memory]: 63 MB (+687kb) [00:00:05]
+// [GUI Memory]: 64 MB (+717kb) [00:00:05]
+// [GUI Memory]: 64 MB (+180kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 458 MB (+1957kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 470 MB (+11792kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 470 MB (+794kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: E:/major_assignment/project_1; part: xc7z020clg484-1
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 472 MB (+1343kb) [00:00:06]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 481 MB. GUI used memory: 29 MB. Current time: 12/29/23 4:42:40 PM
+// [Engine Memory]: 481 MB (+10358kb) [00:00:06]
+// [Engine Memory]: 485 MB (+3887kb) [00:00:08]
+// [Engine Memory]: 487 MB (+2002kb) [00:00:10]
+// PAResourceOtoP.PAViews_PROJECT_SUMMARY: Project Summary: close view
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // r:aG
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_SETUP");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// al:bE (ch:JFrame): Close Project: addNotify
+dismissDialog("Close Project"); // al:bE (ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, count.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, count.v]", 2, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [GUI Memory]: 68 MB (+3930kb) [00:00:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, count.v]", 2, false); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 70 MB (+1994kb) [00:00:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mymode - Mode (Debounce.v)]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mymode - Mode (Debounce.v)]", 4, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mymode - Mode (Debounce.v)]", 4, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 491 MB (+3665kb) [00:00:22]
+// [Engine Memory]: 498 MB (+7311kb) [00:00:22]
+// [Engine Memory]: 498 MB (+184kb) [00:00:22]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mymode1 - mode1 (mode1.v)]", 6, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [GUI Memory]: 71 MB (+1607kb) [00:00:23]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mymode1 - mode1 (mode1.v)]", 6, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [GUI Memory]: 75 MB (+3846kb) [00:00:23]
+// [Engine Memory]: 499 MB (+1351kb) [00:00:23]
+// [Engine Memory]: 503 MB (+4026kb) [00:00:23]
+// [GUI Memory]: 76 MB (+700kb) [00:00:23]
+// [Engine Memory]: 503 MB (+249kb) [00:00:23]
+// [GUI Memory]: 79 MB (+3428kb) [00:00:23]
+// [GUI Memory]: 83 MB (+4511kb) [00:00:23]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), Count - count (count.v)]", 8, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), Count - count (count.v)]", 8, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 510 MB (+7245kb) [00:00:24]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bit_calc (bit_calc.v)]", 10, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bit_calc (bit_calc.v)]", 10, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+// [GUI Memory]: 84 MB (+1185kb) [00:00:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 516 MB. GUI used memory: 36 MB. Current time: 12/29/23 4:43:00 PM
+// [Engine Memory]: 520 MB (+10350kb) [00:00:27]
+selectCodeEditor("bit_calc.v", 689, 187); // bi:J (JPanel:JComponent, ch:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mode1.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Debounce.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "count.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("top.v", 372, 164); // bi:J (JPanel:JComponent, ch:JFrame)
+closeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // v:JideButton (H:H, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 80 seconds
+selectCodeEditor("top.v", 220, 7); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "count.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("top.v", 61, 359); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top.v", 94, 358); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top.v", 50, 354); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("top.v", 82, 359); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 85 seconds
+selectCodeEditor("count.v", 191, 325); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 131, 273); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 129, 262); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 84, 226); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 126, 218); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 127, 220); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 56, 301); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 167, 286); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 135, 295); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 121, 119); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 52, 153); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 92, 208); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 112, 229); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 144, 267); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 105, 271); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 109, 213); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 109, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 84, 324); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 105, 284); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 83, 322); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 104, 290); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 89, 245); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 112, 288); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 46, 352); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 52, 158); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 93, 271); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 104, 231); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 87, 311); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 49, 342); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 58, 189); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 377); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 105, 167); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 17, 159); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 86, 99); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 11, 183); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 177, 90); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 7, 48); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 72); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 72, 65); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 84, 75); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 63, 87); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 41, 89); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 17, 95); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 14, 82); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 87); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 16, 83); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 17, 83, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("count.v", 39, 55); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 50, 70); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 51, 83); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 16, 81); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 38, 103); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 70); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 20, 54); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 19, 75); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 17, 87); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 43, 146); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 34, 177); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 35, 199); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 19, 60); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 19, 90); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 22, 198); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 25, 77); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 24, 90); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 25, 203); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 79); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 21, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 94); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 24, 205); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 83); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 21, 205); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 28, 81); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 173); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 30, 78); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 198); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 16, 110); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 28, 83); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 36, 189); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 34, 67); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 44, 211); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 40, 75); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 29, 201); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 45, 85); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 238); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 35, 203); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 73, 224); // bi:J (JPanel:JComponent, ch:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Dec 29 16:48:08 2023] Launched impl_1... Run output will be captured here: E:/major_assignment/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// [GUI Memory]: 88 MB (+3674kb) [00:05:36]
+// [GUI Memory]: 89 MB (+771kb) [00:05:37]
+// Elapsed time: 10 seconds
+selectCodeEditor("count.v", 13, 163); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 82, 143); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 21, 185); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 28, 210); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 22, 204); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 190); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 31, 195); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 173); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 199); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 18, 173); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 30, 203); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 25, 180); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 197); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 24, 172); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 23, 196); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 170); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 25, 204); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 24, 169); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 34, 319); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 200); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 318); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 12, 337); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 38, 188); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 34, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// cm:N (ch:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 668 MB. GUI used memory: 39 MB. Current time: 12/29/23 4:48:35 PM
+// [Engine Memory]: 749 MB (+239976kb) [00:06:02]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 760 MB. GUI used memory: 38 MB. Current time: 12/29/23 4:48:36 PM
+// [Engine Memory]: 788 MB (+40796kb) [00:06:03]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi.loadEngineXgd elapsed time: 0.4s
+// [Engine Memory]: 916 MB (+134926kb) [00:06:03]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 93 MB (+4162kb) [00:06:04]
+// [GUI Memory]: 94 MB (+939kb) [00:06:05]
+// [Engine Memory]: 920 MB (+3686kb) [00:06:05]
+// Device: addNotify
+// [Engine Memory]: 926 MB (+6418kb) [00:06:05]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2014.4 
+// Tcl Message: Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml... Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [E:/major_assignment/project_1/.Xil/Vivado-12568-DESKTOP-1LQGH74/dcp/top.xdc] Finished Parsing XDC File [E:/major_assignment/project_1/.Xil/Vivado-12568-DESKTOP-1LQGH74/dcp/top.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1030.172 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1030.172 ; gain = 0.000 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1217.465 ; gain = 412.688 
+// Device view-level: 0.0
+// [Engine Memory]: 926 MB (+155kb) [00:06:06]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 928 MB (+2183kb) [00:06:06]
+// [Engine Memory]: 932 MB (+4071kb) [00:06:06]
+// 'dg' command handler elapsed time: 7 seconds
+// [Engine Memory]: 933 MB (+1069kb) [00:06:06]
+// [Engine Memory]: 935 MB (+1712kb) [00:06:06]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 940 MB (+5525kb) [00:06:07]
+// [Engine Memory]: 940 MB (+475kb) [00:06:07]
+dismissDialog("Open Implemented Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 943 MB (+2637kb) [00:06:07]
+// [Engine Memory]: 949 MB (+6725kb) [00:06:07]
+// [Engine Memory]: 952 MB (+2224kb) [00:06:07]
+// [Engine Memory]: 953 MB (+1552kb) [00:06:07]
+// [Engine Memory]: 957 MB (+3858kb) [00:06:07]
+// [Engine Memory]: 960 MB (+2998kb) [00:06:07]
+// [Engine Memory]: 965 MB (+5857kb) [00:06:07]
+// [Engine Memory]: 983 MB (+19193kb) [00:06:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 986 MB. GUI used memory: 69 MB. Current time: 12/29/23 4:48:45 PM
+// [Engine Memory]: 986 MB (+2322kb) [00:06:11]
+// [Engine Memory]: 1,007 MB (+22806kb) [00:06:12]
+// [Engine Memory]: 1,022 MB (+15667kb) [00:06:12]
+// [Engine Memory]: 1,044 MB (+22740kb) [00:06:12]
+// RouteApi.initDelayMediator elapsed time: 7.5s
+// [GUI Memory]: 98 MB (+4942kb) [00:06:13]
+// [Engine Memory]: 1,274 MB (+240984kb) [00:06:13]
+// [GUI Memory]: 104 MB (+5694kb) [00:06:13]
+// [GUI Memory]: 106 MB (+2853kb) [00:06:14]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // w:Y (v:I, ch:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectCodeEditor("count.v", 37, 219); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 107 MB (+775kb) [00:06:19]
+selectCodeEditor("count.v", 54, 242); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 40, 239); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 172, 268); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 91, 239); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 100, 384); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 31, 307); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 50, 192); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 20, 250); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 14, 235); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 157); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 1, 186); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 0, 176); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 71, 283); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 119 MB (+12171kb) [00:06:41]
+// [Engine Memory]: 1,275 MB (+1384kb) [00:06:41]
+selectCodeEditor("count.v", 1, 271); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 108, 330); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 106, 270); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 76, 352); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 75, 220); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 47, 373); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 55, 153); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 16, 390); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 386); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 96, 354); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 119, 326); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 114, 247); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 121); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 50, 128); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 71, 239); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 82, 345); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 32, 383); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 13, 387); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("count.v", 104, 162); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 63, 145); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 3, 152); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 33, 139); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 18, 146); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 18, 139); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 39, 138); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 50, 142); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 93, 220); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 112, 333); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 135, 229); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 124, 283); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 68, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 122, 279); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 132, 188); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 95, 305); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 61, 142); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 46, 325); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 45, 94); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 44, 68); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 74, 309); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 101, 266); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 51, 181); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 48, 205); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 70, 244); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 72, 284); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 58, 379); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 66, 330); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 67, 344); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 101, 34); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 99, 41); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 59, 189); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 67, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 65, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 58, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 70, 177); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 67, 289); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 82, 122); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 37, 121); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 90, 110); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 64, 186); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 189, 145); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 74, 241); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 136, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 63, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 167, 146); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 62, 183); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 169, 152); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 190, 191); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 60, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 205, 163); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 35, 301); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 85, 122); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 57, 276); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 30, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 110, 188); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 40, 236); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 75, 176); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 163, 146); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 67, 215); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 140, 138); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 52, 231); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 165, 81); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 48, 242); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 85, 175); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 127, 145); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 74, 62); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 36, 264); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 75, 182); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 132, 132); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 56, 226); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 68, 187); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 144, 148); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 54, 225); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 119 MB (+297kb) [00:08:12]
+selectCodeEditor("count.v", 152, 110); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 41, 244); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 170, 91); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 84, 65); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 120 MB (+1295kb) [00:08:17]
+selectCodeEditor("count.v", 66, 73); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 55, 184); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 58, 240); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 18, 246); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 38, 270); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 78, 146); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 162, 101); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 74, 194); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 138, 139); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 55, 218); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 171, 81); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 30, 230); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 81, 70); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 77, 183); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 148, 182); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 56, 220); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 158, 182); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 33, 237); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 75, 141); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 79, 145); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 81, 152); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 93, 138); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 60, 164); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 46, 185); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 71, 147); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 178, 105); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 37, 179); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 90, 94); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 46, 201); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 60, 241); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 17, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 16, 275); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 46, 259); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 65, 264); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 98, 266); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,279 MB (+4464kb) [00:08:52]
+selectCodeEditor("count.v", 64, 252); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 66, 186); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 19, 272); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 26, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 15, 368); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 39, 346); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 34, 329); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 27, 313); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 49, 232); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 66, 132); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 59, 388); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 55, 321); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 68, 331); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 59, 274); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 57, 240); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 62, 181); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 51, 203); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("count.v", 60, 137); // bi:J (JPanel:JComponent, ch:JFrame)

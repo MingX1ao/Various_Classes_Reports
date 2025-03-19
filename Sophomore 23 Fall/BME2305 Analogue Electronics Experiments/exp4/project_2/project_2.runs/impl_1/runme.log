@@ -1,0 +1,713 @@
+
+*** Running vivado
+    with args -log clk_sw_7seg_top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source clk_sw_7seg_top.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source clk_sw_7seg_top.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'AC_BCLK'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_MCLK'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_MUTEN'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_PBDAT'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_PBLRC'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_RECDAT'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_RECLRC'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_SCL'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AC_SDA'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_CS'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SCLK'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDI'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDO'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO4'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO5'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO6'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO7'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'POWER_RESET'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CRYPTO_SDA'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_DIN_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_LDAC_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_SCLK_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_SYNC_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ETH_INT_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ETH_RST_B'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CEC'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_N'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_P'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_HPD'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_OUT_EN'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SCL'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SDA'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED4'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED5'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED6'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED7'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_DC'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_RES'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_SCLK'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_SDIN'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_VBAT'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_VDD'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO4'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO5'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO6'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO7'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO8'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO9'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO10'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO11'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO12'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO13'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO14'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO15'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_8'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_9'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_12'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO0'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO1'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO4'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO5'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO6'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO7'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO8'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO9'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO10'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO11'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO12'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO13'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO14'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO15'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_UART_RX'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_UART_TX'. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:131]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc:131]
+Finished Parsing XDC File [C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.srcs/constrs_1/new/exp2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 462.305 ; gain = 2.270
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d4d26b5c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.293 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 28 cells.
+Phase 2 Constant Propagation | Checksum: 17d559bf0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 911.293 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 49 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1ff4942b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 911.293 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1ff4942b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 911.293 ; gain = 0.000
+Implement Debug Cores | Checksum: 1d4d26b5c
+Logic Optimization | Checksum: 1d4d26b5c
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 1ff4942b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 911.293 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 106 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 911.293 ; gain = 451.258
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 911.293 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.runs/impl_1/clk_sw_7seg_top_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 142b05017
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 911.293 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.293 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.293 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: e2584413
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 911.293 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: e2584413
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: e2584413
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: d929e373
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 18b9140eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+Phase 2.1.2.1 Place Init Design | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 2.1 Placer Initialization Core | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 2 Placer Initialization | Checksum: 25526bfc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1c8555b25
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1c8555b25
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 23f740d07
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 242d7b107
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 4.4 Small Shape Detail Placement | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 4 Detail Placement | Checksum: 1d3d44f28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 1d7f8a2d6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+Ending Placer Task | Checksum: 13f2f75b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 933.082 ; gain = 21.789
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 106 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 933.082 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 933.082 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 933.082 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 933.082 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: c76ed485
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1048.578 ; gain = 115.496
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: c76ed485
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1053.500 ; gain = 120.418
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 15b5c8761
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a5eed778
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: b329c4de
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+Phase 4 Rip-up And Reroute | Checksum: b329c4de
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: b329c4de
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 6 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0382106 %
+  Global Horizontal Routing Utilization  = 0.0520622 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 16.2162%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 18.9189%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
+Phase 6 Route finalize | Checksum: b329c4de
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: b329c4de
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: 12d1ec047
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.730 ; gain = 126.648
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 106 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1059.730 ; gain = 126.648
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1059.730 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/bme31/Desktop/shudianshiyan4/project_2/project_2.runs/impl_1/clk_sw_7seg_top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+WARNING: [Drc 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [Drc 23-20] Rule violation (ZPS7-1) PS7 block required - The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./clk_sw_7seg_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1411.316 ; gain = 330.785
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 01 18:19:37 2023...

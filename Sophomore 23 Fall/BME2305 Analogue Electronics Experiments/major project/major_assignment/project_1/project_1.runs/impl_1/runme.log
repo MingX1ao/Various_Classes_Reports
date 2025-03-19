@@ -1,0 +1,982 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' for cell 'recoder/uclk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp' for cell 'recoder/ublk_mem_gen'
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, recoder/uclk_wiz/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'recoder/uclk_wiz/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/.Xil/Vivado-5152-DESKTOP-1LQGH74/dcp_2/clk_wiz_0.edf:316]
+Parsing XDC File [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'recoder/uclk_wiz/inst'
+Finished Parsing XDC File [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'recoder/uclk_wiz/inst'
+Parsing XDC File [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'recoder/uclk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 956.863 ; gain = 481.309
+Finished Parsing XDC File [c:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'recoder/uclk_wiz/inst'
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ADC_CS'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SCLK'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDI'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDO'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'POWER_RESET'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CRYPTO_SDA'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_DIN_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_LDAC_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_SCLK_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_SYNC_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ETH_INT_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ETH_RST_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CEC'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_N'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_P'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_HPD'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_OUT_EN'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SCL'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SDA'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_DC'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_RES'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_SCLK'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_SDIN'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_VBAT'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'OLED_VDD'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO10'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO11'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO13'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO14'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO15'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO10'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO11'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO13'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO14'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO15'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_UART_RX'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_UART_TX'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JA7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S_JB7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[7]'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TFT_R0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 957.785 ; gain = 771.113
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 963.477 ; gain = 4.645
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ce8f0343
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 963.477 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 136 cells.
+Phase 2 Constant Propagation | Checksum: ce0f0cb6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 963.477 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 255 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 8 unconnected cells.
+Phase 3 Sweep | Checksum: 283c1a20
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.330 . Memory (MB): peak = 963.477 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 283c1a20
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 963.477 ; gain = 0.000
+Implement Debug Cores | Checksum: 1d15f4470
+Logic Optimization | Checksum: 1d15f4470
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 120 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 28 newly gated: 92 Total Ports: 240
+Number of Flops added for Enable Generation: 4
+
+Ending PowerOpt Patch Enables Task | Checksum: 1f37e6f83
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1f37e6f83
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1123.043 ; gain = 159.566
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 108 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.043 ; gain = 165.258
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1123.043 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/top_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 110da2af3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1123.043 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 1e228e8a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1123.043 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'AC_PBLRC_OBUF_inst_i_1' is driving clock pin of 172 registers. This could lead to large hold time violations. First few involved registers are:
+	recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+	recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+	recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+	recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+	recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 1e228e8a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 1e228e8a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.510 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 69517704
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.510 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d51d3d82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.510 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 187391635
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.560 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2.1.2.1 Place Init Design | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.780 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 14ee1184f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.800 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 154c1c590
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 154c1c590
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1c8cc5b2a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 15cfdd274
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 15cfdd274
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 1c53fece1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 1dc2f946d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 4.6 Small Shape Detail Placement | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 4 Detail Placement | Checksum: 134b9d548
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1943ba930
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 1943ba930
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.169. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 5.2.2 Post Placement Optimization | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 5.2 Post Commit Optimization | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 5.5 Placer Reporting | Checksum: 2344df409
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 22b062a63
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 22b062a63
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Ending Placer Task | Checksum: 14ff0dfa8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.043 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 109 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1123.043 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1123.043 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1123.043 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1123.043 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 3adcc32a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1145.910 ; gain = 22.867
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 3adcc32a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1148.637 ; gain = 25.594
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 3adcc32a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1156.820 ; gain = 33.777
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2050261f9
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.664 ; gain = 75.621
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.17  | TNS=-30    | WHS=-0.311 | THS=-7.82  |
+
+Phase 2 Router Initialization | Checksum: 204a2e664
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.664 ; gain = 75.621
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1bc2c46d0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.664 ; gain = 75.621
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 189
+ Number of Nodes with overlaps = 73
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 7
+INFO: [Route 35-325] The following overlapped nodes exist in the design and there is low overall congestion. 
+Resolution: Check for routing resource conflicts on the identified nets or significant localized congestion using the Route Congestion Metrics in the Device View. 
+1. INT_L_X34Y46/IMUX_L10
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[0]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[3]
+2. INT_L_X34Y47/IMUX_L19
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[1]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[3]
+3. INT_L_X34Y49/IMUX_L13
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[1]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[2]
+4. INT_L_X34Y47/IMUX_L41
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[2]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[3]
+5. INT_L_X34Y46/IMUX_L41
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[3]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[5]
+6. INT_R_X35Y46/IMUX1
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[2]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[4]
+7. INT_R_X35Y46/NL1BEG2
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[0]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[1]
+
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+INFO: [Route 35-325] The following overlapped node exist in the design and there is low overall congestion. 
+Resolution: Check for routing resource conflicts on the identified nets or significant localized congestion using the Route Congestion Metrics in the Device View. 
+1. INT_R_X35Y46/IMUX45
+Overlapping nets: 2
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[3]
+	recoder/i2c_top_inst/sine_wave_inst/n_0_index_reg[4]
+
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 14ec4b389
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1206.410 ; gain = 83.367
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.77  | TNS=-38.5  | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 174ec4ff9
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1206.410 ; gain = 83.367
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1664a92a6
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1206.410 ; gain = 83.367
+Phase 4.1.2 GlobIterForTiming | Checksum: 120400301
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1222.363 ; gain = 99.320
+Phase 4.1 Global Iteration 0 | Checksum: 120400301
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1222.363 ; gain = 99.320
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 43
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1b7c18185
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1227.898 ; gain = 104.855
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.74  | TNS=-38    | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Fast Budgeting
+Phase 4.2.2.1 Fast Budgeting | Checksum: 10ee0bc3b
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1227.898 ; gain = 104.855
+Phase 4.2.2 GlobIterForTiming | Checksum: 21130b87e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1227.898 ; gain = 104.855
+Phase 4.2 Global Iteration 1 | Checksum: 21130b87e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1227.898 ; gain = 104.855
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 77
+ Number of Nodes with overlaps = 51
+ Number of Nodes with overlaps = 43
+Phase 4.3 Global Iteration 2 | Checksum: 2ce277c9a
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+Phase 4 Rip-up And Reroute | Checksum: 2ce277c9a
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 29fbe9208
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.74  | TNS=-38    | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 29fbe9208
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 29fbe9208
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 2715cbac6
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.74  | TNS=-38    | WHS=-0.133 | THS=-0.753 |
+
+Phase 7 Post Hold Fix | Checksum: 259d3faf7
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.11391 %
+  Global Horizontal Routing Utilization  = 1.09204 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 47.7477%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 41.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 36.7647%, No Congested Regions.
+Phase 8 Route finalize | Checksum: 1c46488f5
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1c46488f5
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: fa0a211e
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1229.750 ; gain = 106.707
+
+Phase 11 Post Router Timing
+
+Phase 11.1 Update Timing
+Phase 11.1 Update Timing | Checksum: fa0a211e
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 1229.750 ; gain = 106.707
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.91  | TNS=-41.2  | WHS=0.0112 | THS=0      |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: fa0a211e
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 1229.750 ; gain = 106.707
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1229.750 ; gain = 106.707
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 110 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 1229.750 ; gain = 106.707
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1229.750 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+WARNING: [Drc 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net AC_RECLRC_OBUF is a gated clock net sourced by a combinational pin AC_PBLRC_OBUF_inst_i_1/O, cell AC_PBLRC_OBUF_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT AC_PBLRC_OBUF_inst_i_1 is driving clock pin of 172 cells. This could lead to large hold time violations. First few involved cells are:
+    recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+    recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+    recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+    recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+    recoder/ublk_mem_gen/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram {RAMB36E1}
+
+WARNING: [Drc 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port AC_BCLK expects both input and output buffering but the buffers are incomplete.
+WARNING: [Drc 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port AC_PBLRC expects both input and output buffering but the buffers are incomplete.
+WARNING: [Drc 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port AC_RECLRC expects both input and output buffering but the buffers are incomplete.
+WARNING: [Drc 23-20] Rule violation (ZPS7-1) PS7 block required - The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 7 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1537.082 ; gain = 307.332
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 29 23:39:45 2023...

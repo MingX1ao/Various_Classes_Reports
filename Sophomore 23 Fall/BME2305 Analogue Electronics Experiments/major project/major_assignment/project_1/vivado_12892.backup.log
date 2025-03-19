@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 29 20:51:13 2023
+# Process ID: 7772
+# Current directory: F:/major_assignment/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent52672 F:\major_assignment\project_1\project_1.xpr
+# Log file: F:/major_assignment/project_1/vivado.log
+# Journal file: F:/major_assignment/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only F:/major_assignment/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/bme317/Desktop/major_assignment/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/VIVADO/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 820.523 ; gain = 168.746
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 29 20:52:35 2023...

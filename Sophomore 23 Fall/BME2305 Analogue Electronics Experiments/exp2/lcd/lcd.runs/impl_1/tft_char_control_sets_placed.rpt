@@ -1,0 +1,55 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Fri Nov 17 19:38:03 2023
+| Host         : DESKTOP-1LQGH74 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tft_char_control_sets_placed.rpt
+| Design       : tft_char
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     2 |
+| Minimum Number of register sites lost to control set restrictions |     9 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              12 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              11 |            4 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------+------------------+------------------+----------------+
+|       Clock Signal      |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------------+------------------+------------------+----------------+
+|  uclk_wiz/inst/clk_out1 | tft_ctrl_inst/n_0_cnt_v[10]_i_1 | tft_ctrl_inst/O1 |                4 |             11 |
+|  uclk_wiz/inst/clk_out1 |                                 | tft_ctrl_inst/O1 |                7 |             12 |
++-------------------------+---------------------------------+------------------+------------------+----------------+
+
+

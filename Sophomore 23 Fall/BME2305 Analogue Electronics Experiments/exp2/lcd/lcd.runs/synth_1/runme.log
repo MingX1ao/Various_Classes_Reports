@@ -1,0 +1,608 @@
+
+*** Running vivado
+    with args -log tft_char.vds -m64 -mode batch -messageDb vivado.pb -source tft_char.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source tft_char.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/BME/Desktop/lcd/lcd.cache/wt [current_project]
+# set_property parent.project_path C:/Users/BME/Desktop/lcd/lcd.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet C:/Users/BME/Desktop/lcd/lcd.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/lcd/lcd.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/BME/Desktop/模电2/tft_disp.v
+#   C:/Users/BME/Desktop/模电2/tft_ctrl.v
+#   C:/Users/BME/Desktop/模电2/tft_char.v
+# }
+# read_xdc C:/Users/BME/Desktop/模电2/DSDB.xdc
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/模电2/DSDB.xdc]
+# catch { write_hwdef -file tft_char.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top tft_char -part xc7z020clg484-1
+Command: synth_design -top tft_char -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 233.000 ; gain = 79.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tft_char' [C:/Users/BME/Desktop/模电2/tft_char.v:2]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/BME/Desktop/lcd/lcd.runs/synth_1/.Xil/Vivado-10092-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/BME/Desktop/lcd/lcd.runs/synth_1/.Xil/Vivado-10092-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'tft_ctrl' [C:/Users/BME/Desktop/模电2/tft_ctrl.v:2]
+	Parameter H_SYNC bound to: 11'b00000000001 
+	Parameter H_BACK bound to: 11'b00000101110 
+	Parameter H_VALID bound to: 11'b01100100000 
+	Parameter H_FRONT bound to: 11'b00011010010 
+	Parameter H_TOTAL bound to: 11'b10000100001 
+	Parameter V_SYNC bound to: 11'b00000000001 
+	Parameter V_BACK bound to: 11'b00000010111 
+	Parameter V_VALID bound to: 11'b00111100000 
+	Parameter V_FRONT bound to: 11'b00000010110 
+	Parameter V_TOTAL bound to: 11'b01000001110 
+INFO: [Synth 8-256] done synthesizing module 'tft_ctrl' (2#1) [C:/Users/BME/Desktop/模电2/tft_ctrl.v:2]
+INFO: [Synth 8-638] synthesizing module 'tft_disp' [C:/Users/BME/Desktop/模电2/tft_disp.v:2]
+	Parameter H_VALID bound to: 11'b01100100000 
+	Parameter V_VALID bound to: 11'b00111100000 
+	Parameter CHAR_B_H bound to: 10'b0100010000 
+	Parameter CHAR_B_V bound to: 10'b0010110000 
+	Parameter CHAR_W bound to: 10'b0100000000 
+	Parameter CHAR_H bound to: 10'b0010000000 
+	Parameter BLACK bound to: 24'b000000000000000000000000 
+	Parameter GOLDEN bound to: 24'b111111111101011100000000 
+INFO: [Synth 8-4471] merging register 'char_reg[126][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[125][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[68][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[67][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[66][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[65][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[64][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[63][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[62][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[61][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[60][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[4][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[3][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[2][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[1][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[0][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/模电2/tft_disp.v:51]
+INFO: [Synth 8-256] done synthesizing module 'tft_disp' (3#1) [C:/Users/BME/Desktop/模电2/tft_disp.v:2]
+INFO: [Synth 8-256] done synthesizing module 'tft_char' (4#1) [C:/Users/BME/Desktop/模电2/tft_char.v:2]
+WARNING: [Synth 8-3917] design tft_char has port tft_disp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 277.676 ; gain = 123.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 277.676 ; gain = 123.707
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/BME/Desktop/lcd/lcd.runs/synth_1/.Xil/Vivado-10092-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'uclk_wiz'
+Finished Parsing XDC File [C:/Users/BME/Desktop/lcd/lcd.runs/synth_1/.Xil/Vivado-10092-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'uclk_wiz'
+Parsing XDC File [C:/Users/BME/Desktop/模电2/DSDB.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK_125MHZ'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'AC_BCLK'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'AC_MCLK'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'AC_MUTEN'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'AC_PBDAT'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'AC_PBLRC'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'AC_RECDAT'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'AC_RECLRC'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'AC_SCL'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'AC_SDA'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'ADC_CS'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SCLK'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDI'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDO'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO3'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO4'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO5'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO6'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO7'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'BTN1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'BTN2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'BTN3'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'POWER_RESET'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'CRYPTO_SDA'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'DAC_DIN_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'DAC_LDAC_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'DAC_SCLK_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'DAC_SYNC_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'ETH_INT_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'ETH_RST_B'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CEC'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_N'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_P'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_HPD'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_OUT_EN'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SCL'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SDA'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'LED0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'LED3'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'LED4'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'LED5'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'LED6'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'LED7'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'OLED_DC'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'OLED_RES'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'OLED_SCLK'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'OLED_SDIN'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'OLED_VBAT'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'OLED_VDD'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO3'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO4'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO5'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO6'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO7'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO8'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO9'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO10'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO11'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO12'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO13'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO14'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO15'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_8'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_9'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_12'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO0'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO1'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO2'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO3'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO4'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO5'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO6'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO7'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO8'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO9'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO10'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO11'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO12'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO13'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO14'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO15'. [C:/Users/BME/Desktop/模电2/DSDB.xdc:129]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/BME/Desktop/模电2/DSDB.xdc:129]
+Finished Parsing XDC File [C:/Users/BME/Desktop/模电2/DSDB.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/BME/Desktop/模电2/DSDB.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/tft_char_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 665.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  C:/Users/BME/Desktop/lcd/lcd.runs/synth_1/.Xil/Vivado-10092-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+ROM "cnt_v" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|     32518|
+|2     |tft_disp__GB1 |           1|      7424|
+|3     |tft_disp__GB2 |           1|      9591|
+|4     |tft_disp__GB3 |           1|     11776|
+|5     |tft_char__GC0 |           1|       447|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 112   
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tft_char 
+Detailed RTL Component Info : 
+Module tft_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 112   
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module tft_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "tft_ctrl_inst/cnt_v" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3917] design tft_char has port tft_disp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 665.348 ; gain = 511.379
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|     32518|
+|2     |tft_disp__GB1 |           1|      7424|
+|3     |tft_disp__GB2 |           1|      9604|
+|4     |tft_disp__GB3 |           1|     11776|
+|5     |tft_char__GC0 |           1|       473|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][94] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][99] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 665.348 ; gain = 511.379
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|      1500|
+|2     |tft_disp__GB2 |           1|       621|
+|3     |tft_char__GC0 |           1|       201|
++------+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 665.348 ; gain = 511.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 671.363 ; gain = 517.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_char_GT0  |           1|      4356|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |LUT1      |     2|
+|3     |LUT2      |    34|
+|4     |LUT3      |    52|
+|5     |LUT4      |   104|
+|6     |LUT5      |   260|
+|7     |LUT6      |   730|
+|8     |MUXF7     |    16|
+|9     |FDCE      |    23|
+|10    |IBUF      |     1|
+|11    |OBUF      |    30|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |  1254|
+|2     |  tft_ctrl_inst |tft_ctrl |   591|
+|3     |  tft_disp_inst |tft_disp |   628|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:33 . Memory (MB): peak = 672.094 ; gain = 94.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 518.125
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+138 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 672.094 ; gain = 484.910
+# write_checkpoint -noxdef tft_char.dcp
+# catch { report_utilization -file tft_char_utilization_synth.rpt -pb tft_char_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 672.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 19:37:48 2023...

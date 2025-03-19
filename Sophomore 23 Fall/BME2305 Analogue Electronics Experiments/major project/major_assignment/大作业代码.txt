@@ -1,0 +1,92 @@
+module ClockDivider (
+  input wire clk,     // 输入时钟信号
+  input wire rst_n,   // 输入复位信号
+  output reg clk_1hz  // 输出分频后的1 Hz时钟信号
+);
+
+  reg [31:0] count1;   // 32位计数器，用于分频计数
+
+  always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+      count1 <= 0;      // 复位时，将计数器清零
+      clk_1hz <= 0;     // 复位时，将输出信号清零
+    end else begin
+      if (count1 < 62500000) begin
+        count1 <= count1 + 1;   // 在前半周期内，计数器递增
+        clk_1hz <= 1;           // 输出信号为1
+      end else if (count1 < 125000000-1) begin
+        count1 <= count1 + 1;   // 在后半周期内，计数器递增
+        clk_1hz <= 0;           // 输出信号为0
+      end else begin
+        count1 <= 0;            // 一个完整周期后，计数器清零
+        clk_1hz <= 0;           // 输出信号为0
+      end
+    end
+  end
+endmodule
+
+module DigitalClock (
+  input wire clk_1hz,           // 输入分频后的1 Hz时钟信号
+  input wire btn_reset,         // 输入复位按钮信号
+  output reg [4:0] led_hours,   // 输出小时的LED显示
+  output reg [3:0] sseg3_minutes, // 输出分钟高位的七段数码管显示
+  output reg [3:0] sseg2_minutes, // 输出分钟低位的七段数码管显示
+  output reg [3:0] sseg1_seconds, // 输出秒钟高位的七段数码管显示
+  output reg [3:0] sseg0_seconds, // 输出秒钟低位的七段数码管显示
+  output reg led_hourly_chime   // 输出整点报时的LED状态
+);
+
+  reg [4:0] hours;               // 5位小时寄存器
+  reg [5:0] minutes;             // 6位分钟寄存器
+  reg [5:0] seconds;             // 6位秒钟寄存器
+  reg [2:0] hourly_chime_timer;  // 3位整点报时计时器
+
+  always @(posedge clk_1hz or posedge btn_reset) begin
+    if (btn_reset) begin
+      hours <= 6'b000000;         // 复位时，小时清零
+      minutes <= 6'b000000;       // 复位时，分钟清零
+      seconds <= 6'b000000;       // 复位时，秒钟清零
+      hourly_chime_timer <= 3'b000; // 复位时，整点报时计时器清零
+      led_hourly_chime <= 0;      // 复位时，整点报时LED清零
+    end else begin
+      if (seconds == 6'b111111) begin
+        seconds <= 6'b000000;
+        if (minutes == 6'b111111) begin
+          minutes <= 6'b000000;
+          if (hours == 6'b101111) begin
+            hours <= 6'b000000;     // 23时时回到0时
+          end else begin
+            hours <= hours + 1;     // 小时递增
+          end
+
+          if (hours[4:0] == 6'b00000) begin
+            hourly_chime_timer <= 3'b111; // 整点报时触发，设置计时器
+          end
+        end else begin
+          minutes <= minutes + 1;   // 分钟递增
+        end
+      end else begin
+        seconds <= seconds + 1;     // 秒钟递增
+      end
+
+      if (hourly_chime_timer > 3'b000) begin
+        hourly_chime_timer <= hourly_chime_timer - 1; // 计时器递减
+        led_hourly_chime <= 1;                        // LED保持亮
+      end else begin
+        led_hourly_chime <= 0;                        // LED关闭
+      end
+    end
+  end
+
+  // 将小时转换为二进制表示，并用LED灯显示
+  assign led_hours = hours[4:0];
+
+  // 分钟高位和低位显示
+  assign sseg3_minutes = minutes[5:2];
+  assign sseg2_minutes = minutes[1:0];
+
+  // 秒钟高位和低位显示
+  assign sseg1_seconds = seconds[5:2];
+  assign sseg0_seconds = seconds[1:0];
+
+endmodule

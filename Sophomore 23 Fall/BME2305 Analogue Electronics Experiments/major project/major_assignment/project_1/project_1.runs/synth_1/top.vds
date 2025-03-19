@@ -1,0 +1,881 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Dec 29 23:37:42 2023
+# Process ID: 13392
+# Log file: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/top.vds
+# Journal file: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/bme317/Desktop/major_assignment/project_1/project_1.cache/wt [current_project]
+# set_property parent.project_path C:/Users/bme317/Desktop/major_assignment/project_1/project_1.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_controller.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/sine_wave.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_effects.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/freq_div.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_config.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_codec.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_tx.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_rx.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/debounce.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/edge_detect.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/count.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/UART_crl.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/111/Debounce.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v
+#   C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v
+# }
+# read_xdc C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc
+# set_property used_in_implementation false [get_files C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7z020clg484-1
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_48kHz is not allowed [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:40]
+WARNING: [Synth 8-992] reset is already implicitly declared earlier [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:67]
+WARNING: [Synth 8-2611] redeclaration of ansi port sample_end is not allowed [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port sample_req is not allowed [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:70]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 243.172 ; gain = 88.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mode' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/111/Debounce.v:6]
+INFO: [Synth 8-638] synthesizing module 'Debounce' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/111/Debounce.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Debounce' (1#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/111/Debounce.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Mode' (2#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/111/Debounce.v:6]
+INFO: [Synth 8-638] synthesizing module 'count' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/count.v:3]
+INFO: [Synth 8-638] synthesizing module 'number_output' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/count.v:240]
+INFO: [Synth 8-256] done synthesizing module 'number_output' (3#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/count.v:240]
+INFO: [Synth 8-256] done synthesizing module 'count' (4#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/count.v:3]
+WARNING: [Synth 8-350] instance 'Count' of module 'count' requires 14 connections, but only 12 given [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:42]
+INFO: [Synth 8-638] synthesizing module 'UART_crl' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/UART_crl.v:3]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_rx.v:1]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 1085 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (5#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_tx.v:1]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 1085 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (6#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/uart_tx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'UART_crl' (7#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/import/UART_crl.v:3]
+INFO: [Synth 8-638] synthesizing module 'recorder' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v:1]
+	Parameter idle bound to: 3'b000 
+	Parameter l_st bound to: 3'b001 
+	Parameter l_cap bound to: 3'b010 
+	Parameter r_st bound to: 3'b011 
+	Parameter r_cap bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (8#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/debounce.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (9#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/debounce.v:1]
+INFO: [Synth 8-638] synthesizing module 'i2c_top' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'freq_div' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/freq_div.v:3]
+INFO: [Synth 8-256] done synthesizing module 'freq_div' (10#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/freq_div.v:3]
+INFO: [Synth 8-638] synthesizing module 'sine_wave' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/sine_wave.v:7]
+INFO: [Synth 8-256] done synthesizing module 'sine_wave' (11#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/sine_wave.v:7]
+INFO: [Synth 8-638] synthesizing module 'i2c_config' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_config.v:1]
+	Parameter LAST_INDEX bound to: 4'b1010 
+INFO: [Synth 8-638] synthesizing module 'i2c_controller' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_controller.v:1]
+	Parameter LAST_STAGE bound to: 5'b11101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_controller.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_controller.v:65]
+INFO: [Synth 8-256] done synthesizing module 'i2c_controller' (12#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_config.v:61]
+INFO: [Synth 8-256] done synthesizing module 'i2c_config' (13#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_config.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'status' does not match port width (4) of module 'i2c_config' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:78]
+INFO: [Synth 8-638] synthesizing module 'audio_codec' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_codec.v:1]
+INFO: [Synth 8-256] done synthesizing module 'audio_codec' (14#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_codec.v:1]
+INFO: [Synth 8-638] synthesizing module 'audio_effects' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_effects.v:1]
+INFO: [Synth 8-256] done synthesizing module 'audio_effects' (15#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_effects.v:1]
+INFO: [Synth 8-256] done synthesizing module 'i2c_top' (16#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/edge_detect.v:1]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (17#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/edge_detect.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (18#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/realtime/blk_mem_gen_0_stub.v:7]
+WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (18) of module 'blk_mem_gen_0' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v:154]
+WARNING: [Synth 8-324] index 4 out of range [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v:211]
+WARNING: [Synth 8-324] index 5 out of range [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v:212]
+INFO: [Synth 8-256] done synthesizing module 'recorder' (19#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/recorder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 265.070 ; gain = 110.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin recoder:voldown to constant 0 [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:65]
+WARNING: [Synth 8-3295] tying undriven pin recoder:volup to constant 0 [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:65]
+WARNING: [Synth 8-3295] tying undriven pin recoder:rec_aud to constant 0 [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:65]
+WARNING: [Synth 8-3295] tying undriven pin recoder:feedback to constant 0 [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/freq_meter/top.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 265.070 ; gain = 110.883
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'recoder/uclk_wiz'
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'recoder/uclk_wiz'
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ADC_CS'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SCLK'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDI'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'ADC_SDO'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'BB_S_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'POWER_RESET'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'CRYPTO_SDA'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'DAC_DIN_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'DAC_LDAC_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'DAC_SCLK_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'DAC_SYNC_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'ETH_INT_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'ETH_RST_B'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CEC'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_N'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_CLK_P'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_N2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_D_P2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_HPD'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_OUT_EN'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SCL'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'HDMI_SDA'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'OLED_DC'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'OLED_RES'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'OLED_SCLK'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'OLED_SDIN'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'OLED_VBAT'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'OLED_VDD'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO10'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO11'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO13'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO14'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'PBC_DIO15'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'PBC_PFI_12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO8'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO9'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO10'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO11'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO12'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO13'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO14'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'MXP_DIO15'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'S_UART_RX'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'S_UART_TX'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'S_JA0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'S_JA1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'S_JA2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'S_JA3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'S_JA4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'S_JA5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'S_JA6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'S_JA7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'S_JB0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'S_JB1'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'S_JB2'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'S_JB3'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'S_JB4'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'S_JB5'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'S_JB6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'S_JB7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[7]'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'SW7'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'TFT_R0'. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc:179]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/constrs_1/imports/freq_meter/DSDB.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 601.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/.Xil/Vivado-13392-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+ROM "bell_hour" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "rx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "tx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "en" won't be mapped to RAM because it is too sparse.
+ROM "clock_en" won't be mapped to RAM because it is too sparse.
+ROM "acks" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-802] inferred FSM for state register 'control_state_reg' in module 'i2c_config'
+ROM "lut_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "i2c_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "i2c_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "control_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/i2c_top.v:56]
+INFO: [Synth 8-3354] encoded FSM with state register 'control_state_reg' using encoding 'one-hot' in module 'i2c_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 8     
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 6     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 1     
+	  12 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   9 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 26    
+	   4 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 47    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	  31 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
+Module Debounce 
+Detailed RTL Component Info : 
+Module Mode 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module number_output 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module count 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 24    
+	   4 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 25    
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module UART_crl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module freq_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+Module sine_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module i2c_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	  31 Input      1 Bit        Muxes := 1     
+Module i2c_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     13 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module audio_codec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module audio_effects 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module i2c_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+Module edge_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module recorder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[15:0]' into 'recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[15:0]' [C:/Users/bme317/Desktop/major_assignment/project_1/project_1.srcs/sources_1/imports/audio_recorder/audio_codec.v:45]
+ROM "UART_crl/u_uart_rx/rx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "UART_crl/u_uart_tx/tx_cnt" won't be mapped to RAM because it is too sparse.
+ROM "UART_crl/en" won't be mapped to RAM because it is too sparse.
+ROM "UART_crl/en" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3917] design top has port AC_MUTEN driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 601.684 ; gain = 447.496
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/iblk_wr_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Count/bell_minute_h_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Count/bell_second_h_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/blk_din_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[23] )
+WARNING: [Synth 8-3332] Sequential element (\Count/bell_second_h_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\Count/bell_minute_h_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/i2c_config_inst/i2c_controller_inst/data_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/sine_wave_inst/index_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/sine_wave_inst/index_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/sine_wave_inst/index_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_codec_inst/shift_in_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/last_sample_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/i2c_top_inst/audio_effects_inst/dat_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/lrck_buf_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/ulr_edge_detect/buff_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/ulr_edge_detect/buff_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/bck_buf_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/bck_buf_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/bck_buf_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/ubck_edge_detect/buff_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/ubck_edge_detect/buff_reg[0] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/iblk_wr_reg ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_wr_reg ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_din_reg[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_din_reg[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_din_reg[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_din_reg[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\recoder/blk_din_reg[11] ) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 601.684 ; gain = 447.496
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\recoder/volume_control_reg[1] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |BUFG          |     2|
+|4     |CARRY4        |    41|
+|5     |INV           |     1|
+|6     |LUT1          |   146|
+|7     |LUT2          |    64|
+|8     |LUT3          |    62|
+|9     |LUT4          |    45|
+|10    |LUT5          |   106|
+|11    |LUT6          |   151|
+|12    |MUXF7         |     4|
+|13    |FDCE          |   100|
+|14    |FDPE          |    10|
+|15    |FDRE          |   264|
+|16    |FDSE          |     4|
+|17    |IBUF          |    11|
+|18    |IOBUF         |     1|
+|19    |OBUF          |    27|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------+------+
+|      |Instance                    |Module         |Cells |
++------+----------------------------+---------------+------+
+|1     |top                         |               |  1058|
+|2     |  Count                     |count          |   291|
+|3     |    A1                      |number_output  |     7|
+|4     |  UART_crl                  |UART_crl       |   204|
+|5     |    u_uart_rx               |uart_rx        |   118|
+|6     |    u_uart_tx               |uart_tx        |    85|
+|7     |  mymode                    |Mode           |    59|
+|8     |    myDebounce              |Debounce       |    57|
+|9     |  recoder                   |recorder       |   462|
+|10    |    i2c_top_inst            |i2c_top        |   361|
+|11    |      audio_codec_inst      |audio_codec    |    87|
+|12    |      freq_div_inst         |freq_div       |    81|
+|13    |      i2c_config_inst       |i2c_config     |   114|
+|14    |        i2c_controller_inst |i2c_controller |    72|
+|15    |      sine_wave_inst        |sine_wave      |    63|
++------+----------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 447.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 162 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 601.684 ; gain = 77.637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 601.684 ; gain = 447.496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  INV => LUT1: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 215 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 601.684 ; gain = 414.375
+# write_checkpoint -noxdef top.dcp
+# catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 601.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 29 23:37:57 2023...

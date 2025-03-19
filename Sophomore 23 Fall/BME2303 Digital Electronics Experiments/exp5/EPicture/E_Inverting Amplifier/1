@@ -1,0 +1,37 @@
+element	0 show	1 x	2 y	3 min	4 max	5 pic	6 name	7 dim	8 mMode	9 order1	10 order2	11 order3
+1 pic					 	1					 	
+2 5v					 				 			
+3 15v+					 				 			
+4 15v-					 				 			
+5 vps-	1	98	186					 		0		
+6 vps+					 				 			
+7 cs					 				 			
+8 fgen					 				 			
+9 m1	1	318	221	-10.00	10.00	UD	V1	V	DC	3		
+10 m2	1	660	221	-10.00	10.00	UD	V2	V	DC	4		
+11 m3					 				 			
+12 m4					 				 			
+13 m5					 				 			
+14 m6					 				 			
+15 m7					 				 			
+16 m8					 				 			
+17 el					 				 			
+18 el	1	461	79	0.00		R	R1	Ohm		1		
+19 el	1	623	-11	0.00		R	R2	Ohm		2		
+20 el					 				 			
+21 el					 				 			
+22 el					 				 			
+23 el					 				 			
+24 el					 				 			
+25 el					 				 			
+26 el					 				 			
+27 el					 				 			
+28 el					 				 			
+29 el					 				 			
+30 el					 				 			
+31 el					 				 			
+32 el					 				 			
+33 el					 				 			
+34 el					 				 			
+35 el					 				 			
+36 el					 				 			

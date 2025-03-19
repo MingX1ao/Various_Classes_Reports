@@ -1,0 +1,199 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Dec 29 16:52:28 2023
+# Process ID: 11180
+# Log file: C:/Users/bme317/Desktop/major_assignment/project_1/vivado.log
+# Journal file: C:/Users/bme317/Desktop/major_assignment/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bme317/Desktop/major_assignment/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'E:/major_assignment/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 29 16:53:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1038.051 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1038.051 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1176.785 ; gain = 348.609
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1
+[Fri Dec 29 16:54:22 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 16:54:22 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 16:56:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 16:56:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 16:56:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 16:56:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 16:57:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 16:57:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:01:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:01:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:04:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:04:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1550.973 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1550.973 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run impl_1
+launch_runs impl_1
+[Fri Dec 29 17:05:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1563.469 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1563.469 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:08:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:08:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:08:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:08:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:08:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:08:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:13:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:13:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:17:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:17:08 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1581.762 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1581.762 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run impl_1
+launch_runs impl_1
+[Fri Dec 29 17:26:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1589.438 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1589.438 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1
+[Fri Dec 29 17:27:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/synth_1/runme.log
+[Fri Dec 29 17:27:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/bme317/Desktop/major_assignment/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/bme317/Desktop/major_assignment/project_1/.Xil/Vivado-11180-DESKTOP-1LQGH74/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1595.375 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1595.375 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 29 17:29:20 2023...

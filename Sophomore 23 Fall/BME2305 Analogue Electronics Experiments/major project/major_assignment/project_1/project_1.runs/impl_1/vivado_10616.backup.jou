@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Dec 22 19:54:40 2023
+# Process ID: 13808
+# Log file: C:/Users/bme31/Desktop/major_assignment/project_1/project_1.runs/impl_1/top.vdi
+# Journal file: C:/Users/bme31/Desktop/major_assignment/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

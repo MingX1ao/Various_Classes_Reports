@@ -1,0 +1,506 @@
+
+*** Running vivado
+    with args -log tft_char.vds -m64 -mode batch -messageDb vivado.pb -source tft_char.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source tft_char.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/BME/Desktop/project_1/project_1.cache/wt [current_project]
+# set_property parent.project_path C:/Users/BME/Desktop/project_1/project_1.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet C:/Users/BME/Desktop/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/BME/Desktop/lcd_char_code/tft_ctrl.v
+#   C:/Users/BME/Desktop/lcd_char_code/tft_disp.v
+#   C:/Users/BME/Desktop/lcd_char_code/tft_char.v
+# }
+# read_xdc C:/Users/BME/Desktop/lcd_char_code/DSDB.xdc
+# set_property used_in_implementation false [get_files C:/Users/BME/Desktop/lcd_char_code/DSDB.xdc]
+# catch { write_hwdef -file tft_char.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top tft_char -part xc7z020clg484-1
+Command: synth_design -top tft_char -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 232.781 ; gain = 79.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tft_char' [C:/Users/BME/Desktop/lcd_char_code/tft_char.v:2]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/BME/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-14212-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/BME/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-14212-DESKTOP-1LQGH74/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'tft_ctrl' [C:/Users/BME/Desktop/lcd_char_code/tft_ctrl.v:2]
+	Parameter H_SYNC bound to: 11'b00000000001 
+	Parameter H_BACK bound to: 11'b00000101110 
+	Parameter H_VALID bound to: 11'b01100100000 
+	Parameter H_FRONT bound to: 11'b00011010010 
+	Parameter H_TOTAL bound to: 11'b10000100001 
+	Parameter V_SYNC bound to: 11'b00000000001 
+	Parameter V_BACK bound to: 11'b00000010111 
+	Parameter V_VALID bound to: 11'b00111100000 
+	Parameter V_FRONT bound to: 11'b00000010110 
+	Parameter V_TOTAL bound to: 11'b01000001110 
+INFO: [Synth 8-256] done synthesizing module 'tft_ctrl' (2#1) [C:/Users/BME/Desktop/lcd_char_code/tft_ctrl.v:2]
+INFO: [Synth 8-638] synthesizing module 'tft_disp' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:2]
+	Parameter H_VALID bound to: 11'b01100100000 
+	Parameter V_VALID bound to: 11'b00111100000 
+	Parameter CHAR_B_H bound to: 10'b0100010000 
+	Parameter CHAR_B_V bound to: 10'b0010110000 
+	Parameter CHAR_W bound to: 10'b0100000000 
+	Parameter CHAR_H bound to: 10'b0010000000 
+	Parameter BLACK bound to: 24'b000000000000000000000000 
+	Parameter GOLDEN bound to: 24'b111111111101011100000000 
+INFO: [Synth 8-4471] merging register 'char_reg[126][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[125][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[68][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[67][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[66][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[65][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[64][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[63][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[62][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[61][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[60][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[4][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[3][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[2][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[1][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-4471] merging register 'char_reg[0][255:0]' into 'char_reg[127][255:0]' [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:51]
+INFO: [Synth 8-256] done synthesizing module 'tft_disp' (3#1) [C:/Users/BME/Desktop/lcd_char_code/tft_disp.v:2]
+INFO: [Synth 8-256] done synthesizing module 'tft_char' (4#1) [C:/Users/BME/Desktop/lcd_char_code/tft_char.v:2]
+WARNING: [Synth 8-3917] design tft_char has port tft_disp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 278.344 ; gain = 124.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 278.344 ; gain = 124.625
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/BME/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-14212-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'uclk_wiz'
+Finished Parsing XDC File [C:/Users/BME/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-14212-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc] for cell 'uclk_wiz'
+Parsing XDC File [C:/Users/BME/Desktop/lcd_char_code/DSDB.xdc]
+Finished Parsing XDC File [C:/Users/BME/Desktop/lcd_char_code/DSDB.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 664.723 ; gain = 7.570
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  C:/Users/BME/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-14212-DESKTOP-1LQGH74/dcp/clk_wiz_0_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+ROM "cnt_v" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|     32518|
+|2     |tft_disp__GB1 |           1|      7424|
+|3     |tft_disp__GB2 |           1|      9591|
+|4     |tft_disp__GB3 |           1|     11776|
+|5     |tft_char__GC0 |           1|       447|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 112   
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tft_char 
+Detailed RTL Component Info : 
+Module tft_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 112   
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module tft_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "tft_ctrl_inst/cnt_v" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-3917] design tft_char has port tft_disp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 665.020 ; gain = 511.301
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|     32518|
+|2     |tft_disp__GB1 |           1|      7424|
+|3     |tft_disp__GB2 |           1|      9604|
+|4     |tft_disp__GB3 |           1|     11776|
+|5     |tft_char__GC0 |           1|       473|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][94] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tft_disp_insti_3/\char_reg[127][99] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 665.020 ; gain = 511.301
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_disp__GB0 |           1|      1500|
+|2     |tft_disp__GB2 |           1|       621|
+|3     |tft_char__GC0 |           1|       201|
++------+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 665.020 ; gain = 511.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 669.676 ; gain = 515.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tft_char_GT0  |           1|      4356|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 670.445 ; gain = 516.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 670.445 ; gain = 516.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 670.445 ; gain = 516.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 670.445 ; gain = 516.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |LUT1      |     2|
+|3     |LUT2      |    34|
+|4     |LUT3      |    53|
+|5     |LUT4      |   104|
+|6     |LUT5      |   258|
+|7     |LUT6      |   730|
+|8     |MUXF7     |    16|
+|9     |FDCE      |    23|
+|10    |IBUF      |     1|
+|11    |OBUF      |    30|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |  1253|
+|2     |  tft_ctrl_inst |tft_ctrl |   592|
+|3     |  tft_disp_inst |tft_disp |   626|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 670.445 ; gain = 516.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:33 . Memory (MB): peak = 670.445 ; gain = 96.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 670.445 ; gain = 516.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 670.445 ; gain = 483.480
+# write_checkpoint -noxdef tft_char.dcp
+# catch { report_utilization -file tft_char_utilization_synth.rpt -pb tft_char_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 670.445 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 19:44:41 2023...

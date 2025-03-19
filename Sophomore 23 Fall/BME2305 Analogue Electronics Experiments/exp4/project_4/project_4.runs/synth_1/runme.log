@@ -1,0 +1,364 @@
+
+*** Running vivado
+    with args -log clk_7seg99_top.vds -m64 -mode batch -messageDb vivado.pb -source clk_7seg99_top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source clk_7seg99_top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.cache/wt [current_project]
+# set_property parent.project_path C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {{C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v}}
+# read_xdc C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc
+# set_property used_in_implementation false [get_files C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc]
+# catch { write_hwdef -file clk_7seg99_top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top clk_7seg99_top -part xc7z020clg484-1
+Command: synth_design -top clk_7seg99_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 232.910 ; gain = 78.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'clk_7seg99_top' [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:41]
+INFO: [Synth 8-638] synthesizing module 'B7_to_D2' [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:27]
+WARNING: [Synth 8-3936] Found unconnected internal register 'q_reg' and it is trimmed from '8' to '4' bits. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:32]
+INFO: [Synth 8-256] done synthesizing module 'B7_to_D2' (1#1) [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:27]
+WARNING: [Synth 8-689] width (8) of port connection 'B_7' does not match port width (7) of module 'B7_to_D2' [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:92]
+INFO: [Synth 8-638] synthesizing module 'clk_7seg99_sub' [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_7seg99_sub' (2#1) [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:1]
+INFO: [Synth 8-256] done synthesizing module 'clk_7seg99_top' (3#1) [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/sources_1/imports/digital 4/lab44.v:41]
+WARNING: [Synth 8-3917] design clk_7seg99_top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design clk_7seg99_top has port an[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 267.012 ; gain = 112.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 267.012 ; gain = 112.898
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc]
+WARNING: [Vivado 12-507] No nets matched 'pause_IBUF'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN2'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN3'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[7]'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW4'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW5'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW7'. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/bme31/Desktop/shudianshiyan4/project_4/project_4.srcs/constrs_1/new/exp4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 587.008 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_7seg99_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module B7_to_D2 
+Detailed RTL Component Info : 
+Module clk_7seg99_sub 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design clk_7seg99_top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design clk_7seg99_top has port an[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 587.008 ; gain = 432.895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 587.008 ; gain = 432.895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    17|
+|3     |LUT1   |    35|
+|4     |LUT3   |     2|
+|5     |LUT4   |    33|
+|6     |LUT5   |     7|
+|7     |LUT6   |    13|
+|8     |FDCE   |    31|
+|9     |FDRE   |    18|
+|10    |IBUF   |     3|
+|11    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   172|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 587.008 ; gain = 87.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 432.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 18 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 587.008 ; gain = 407.918
+# write_checkpoint -noxdef clk_7seg99_top.dcp
+# catch { report_utilization -file clk_7seg99_top_utilization_synth.rpt -pb clk_7seg99_top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 587.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 01 18:44:34 2023...
