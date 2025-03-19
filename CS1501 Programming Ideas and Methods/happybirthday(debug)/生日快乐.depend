@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1663424425 source:e:\codeblocks\工程\生日快乐\main.cpp
+	<iostream>
+	<string>
+
+1665845510 source:e:\codeblocks\project\生日快乐(有大bug！！)\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+
+1665845681 source:e:\codeblocks\project\happybirthday(debug)\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+
