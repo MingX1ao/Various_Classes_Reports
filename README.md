@@ -19,7 +19,6 @@ During this period, I haven't form a standard, so the contents may seems immatur
 A little matured, but still a freshman.
 
 * EST2501        Digital Fundamentals
-
 * MATH1202    Advanced Mathematics II
 * PHY1251       College Physics I
 
@@ -42,7 +41,6 @@ Stepping into a new level of college life.
 Specialist courses are on the way.
 
 * BME1203     Introduction to Biology
-
 * BME2202     Fundamentals of Biomedical Statistics
 * BME2301     Signal and Systems I
 * BME2302     Medical Physics
