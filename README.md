@@ -62,3 +62,11 @@ It's halfway to not being a rookie now. Lot‘s of classes and workload.
 * BME3402    Anatomy and Physiology I
 * CS2305       Computer System Architecture
 * CS3322       Database Principles
+
+
+
+### Junior 2025 Spring
+
+Anxiety because of pressure to go to higher education
+
+* BME3310 Medical Ultrasound
