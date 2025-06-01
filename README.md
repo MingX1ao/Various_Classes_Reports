@@ -70,3 +70,4 @@ It's halfway to not being a rookie now. Lot‘s of classes and workload.
 Anxiety because of pressure to go to higher education
 
 * BME3310 Medical Ultrasound
+* BME5304 Medical Bioinformatics
