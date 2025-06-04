@@ -71,3 +71,4 @@ Anxiety because of pressure to go to higher education
 
 * BME3310 Medical Ultrasound
 * BME5304 Medical Bioinformatics
+* CS3311 Computer Network
