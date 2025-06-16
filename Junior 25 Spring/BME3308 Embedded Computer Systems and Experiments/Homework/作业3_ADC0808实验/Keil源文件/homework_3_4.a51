@@ -1,0 +1,16 @@
+ORG 0000H
+	LJMP START
+	
+ORG 0040H
+	START:	CLR	C
+			MOV A, #34H
+			SUBB A, #0A3H
+			MOV 50H, A
+			MOV A, #12H
+			SUBB A, #0FH
+			MOV 51H, A
+			
+	LOOP:	NOP
+			JMP LOOP
+			
+END

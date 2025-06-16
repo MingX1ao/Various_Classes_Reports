@@ -1,0 +1,36 @@
+?PR?FUNCTION SEGMENT CODE
+RSEG ?PR?FUNCTION
+
+public _SQR
+_SQR:
+START:	MOV A, R7
+		MOV R0, A
+		MOV A, R5
+		MOV R1, A
+		ACALL RM
+		RET
+				
+RM:		
+		MOV A, R0
+		MOV B, R0
+		MUL AB
+		MOV R2, A
+		MOV R3, B
+		
+		MOV A, R1
+		MOV B, R1
+		MUL AB
+		
+		CLR C
+		ADD A, R2
+		MOV R4, A
+		MOV A, B
+		ADDC A, R3
+		MOV B, A
+		MOV A, R4
+		JC CARRY
+		RET
+CARRY:	MOV R7, #01H
+		RET
+		
+END

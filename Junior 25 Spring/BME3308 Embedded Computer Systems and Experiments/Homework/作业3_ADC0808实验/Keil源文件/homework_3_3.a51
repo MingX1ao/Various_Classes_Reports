@@ -1,0 +1,25 @@
+ORG 0000H
+	LJMP START
+	
+ORG 0040H
+	START:	MOV 23H, #30H
+			MOV 12H, #34H
+			MOV R0, #23H
+			
+			MOV R7, 12H
+			MOV R1, #12H
+			MOV A, @R0
+			
+			MOV 34H, @R1
+			MOV 45H, 34H
+			MOV DPTR, #6712H
+			
+			MOV 12H, DPH
+			MOV R0, DPL
+			MOV A, @R0
+	
+	LOOP:	NOP
+			JMP LOOP
+			
+END
+				

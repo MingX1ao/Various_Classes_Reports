@@ -1,0 +1,18 @@
+ORG 0000H
+	LJMP START
+	
+ORG 0040H
+	START:	MOV P1, #0FFH
+			MOV P3, #0FFH
+			
+	L1:		JNB	P3.2, L2
+			JNB P3.3, L3
+			LJMP L1
+			
+	L2:		MOV	P1, #00H
+			LJMP L1
+			
+	L3:		MOV P1, #0FFH
+			LJMP L1
+			
+END

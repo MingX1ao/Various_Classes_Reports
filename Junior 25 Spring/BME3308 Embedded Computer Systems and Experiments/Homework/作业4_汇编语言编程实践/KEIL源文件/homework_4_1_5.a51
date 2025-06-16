@@ -1,0 +1,23 @@
+ORG 0000H
+	AddressA EQU 20H
+	AddressB EQU 39H
+	AddressC EQU 52H
+	LJMP START
+
+ORG 1000H
+START:
+	MOV AddressA, #03H
+	MOV AddressB, #04H
+	MOV A,AddressA           ;?a,DA,DB,DC????
+    ACALL SQR          ;???????
+    MOV R1,A           ;a?????R1?
+    MOV A,AddressB           ;?b,DB????,?????
+    ACALL SQR          ;???????
+    ADD A,R1           ;????????A?
+    MOV AddressC,A           ;????DC ?
+    SJMP  $
+SQR:MOV DPTR,#TAB      ;???
+    MOVC  A,@A+DPTR
+    RET
+TAB: DB 0,1,4,9,16,25,36,49,64,81
+    END      
